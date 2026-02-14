@@ -1,0 +1,28 @@
+2026-01-27 07:37:11 [    INFO] Executing command: PYTHONPATH=/tmp python3 -c 'from bootstrap import Device; print(Device().firmware_upgrade("src/topologies/"))'
+ 2026-01-27 07:37:11 [    INFO] LIVE LOGS FROM BOOTSTRAP SCRIPT:Applying firmware using ONIE from src/topologies/
+ 2026-01-27 07:37:11 [    INFO] LIVE LOGS FROM BOOTSTRAP SCRIPT:Executing command: yes y | sudo onie-install -f -a -i src/topologies/
+ 2026-01-27 07:37:11 [    INFO] Executing command: sudo cat /tmp/ztp.log
+ 2026-01-27 07:37:11 [    INFO] LIVE LOGS FROM BOOTSTRAP SCRIPT:2026-01-27 06:18:12,565 - INFO - Backing up existing file to /etc/sudoers.d/cumulus.bak
+ 2026-01-27 07:37:11 [    INFO] ZTP LOGS FROM THE SWITCH: firmware_upgrade:
+ 2026-01-27 06:18:12,565 - INFO - Backing up existing file to /etc/sudoers.d/cumulus.bak
+ 2026-01-27 06:18:12,565 - ERROR - An error occurred: [Errno 13] Permission denied: '/etc/sudoers.d/cumulus.bak'
+ 
+ 2026-01-27 07:35:02,933 - INFO - Backing up existing file to /etc/sudoers.d/cumulus.bak
+ 
+ 2026-01-27 07:35:02,933 - ERROR - An error occurred: [Errno 13] Permission denied: '/etc/sudoers.d/cumulus.bak'
+ 
+ 2026-01-27 07:37:11,778 - INFO - Applying firmware using ONIE from src/topologies/
+ 
+ 2026-01-27 07:37:11,778 - INFO - Executing command: yes y | sudo onie-install -f -a -i src/topologies/
+ 
+ 2026-01-27 07:37:11,787 - ERROR - cmd: yes y | sudo onie-install -f -a -i src/topologies/ failed with return code: 1
+ 
+ 2026-01-27 07:37:11,787 - ERROR - Error staging and applying the firmware image.
+ 
+ 2026-01-27 07:37:11 [   ERROR] Error while testing firmware_upgrade on the switch: Applying firmware using ONIE from src/topologies/
+ Executing command: yes y | sudo onie-install -f -a -i src/topologies/
+ sudo: onie-install: command not found
+ 
+ cmd: yes y | sudo onie-install -f -a -i src/topologies/ failed with return code: 1
+ 
+ Error staging and applying the firmware image.
